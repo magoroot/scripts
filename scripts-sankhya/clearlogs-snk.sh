@@ -1,4 +1,5 @@
 #!/bin/bash
+#By: Joás Pardim
 
 # Diretórios de logs do WildFly no Sankhya-W
 LOG_DIRS=(

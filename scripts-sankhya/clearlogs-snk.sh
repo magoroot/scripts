@@ -14,7 +14,7 @@ DAYS_TO_KEEP=30
 for DIR in "${LOG_DIRS[@]}"; do
     if [ -d "$DIR" ]; then
         echo "Limpando logs antigos em: $DIR"
-        
+
         # Encontrar e remover logs com padrão server.log.AAAA-MM-DD que tenham mais de X dias
         find "$DIR" -type f -name "server.log.20*" -mtime +$DAYS_TO_KEEP -exec rm -f {} \;
 
